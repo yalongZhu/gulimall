@@ -102,4 +102,6 @@ public class CouponEntity implements Serializable {
 	 */
 	private Integer publish;
 
+    public void setCouponName(String s) {
+    }
 }
