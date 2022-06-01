@@ -19,6 +19,13 @@ spring:
           filters:
             - RewritePath=/api/(?<segment>.*),/$\{segment}
 
+        - id: third_party_route
+          uri: lb://gulimall-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/(?<segment>.*),/$\{segment}
+
         - id: admin-route
           uri: lb://renren-fast
 #          uri: http://localhost:8080
@@ -27,3 +34,10 @@ spring:
           filters:
             - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
 
+alibaba:
+  cloud:
+    access-key: LTAI5tJcwnhokAPdHR1VLdka
+    secret-key: UkET5z4z6uDI8cWklaamjNhF9FnSiv
+    oss:
+      endpoint: oss-cn-shenzhen.aliyuncs.com
+      bucket: gulimall-yalong

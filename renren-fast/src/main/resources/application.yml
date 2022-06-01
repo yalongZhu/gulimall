@@ -48,6 +48,14 @@ spring:
 #  resources:
 #    add-mappings: false
 
+alibaba:
+  cloud:
+    access-key: LTAI5tJcwnhokAPdHR1VLdka
+    secret-key: UkET5z4z6uDI8cWklaamjNhF9FnSiv
+    oss:
+      endpoint: oss-cn-shenzhen.aliyuncs.com
+      bucket: gulimall-yalong
+
 
 #mybatis
 mybatis-plus:

@@ -7,6 +7,7 @@
         <groupId>com.atguigu.gulimall</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gulimall-common</artifactId>
@@ -21,6 +22,17 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>aliyun-oss-spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.aliyun</groupId>
+                    <artifactId>aliyun-java-sdk-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>4.5.0</version>
         </dependency>
 <!--    mybatis-plus    -->
         <dependency>

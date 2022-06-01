@@ -8,6 +8,13 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+#    alicloud:
+#      access-key: LTAI5tJcwnhokAPdHR1VLdka
+#      secret-key: UkET5z4z6uDI8cWklaamjNhF9FnSiv
+#      oss:
+#        endpoint: oss-cn-shenzhen.aliyuncs.com
+#        bucket: gulimall-yalong
+
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
@@ -28,3 +35,4 @@ alibaba:
     secret-key: UkET5z4z6uDI8cWklaamjNhF9FnSiv
     oss:
       endpoint: oss-cn-shenzhen.aliyuncs.com
+
